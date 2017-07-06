@@ -1,6 +1,8 @@
 require 'giphy_api/version'
 require 'giphy_api/configuration'
 require 'giphy_api/connection'
+require 'giphy_api/gifs'
+
 
 module GiphyAPI
   class <<  self
