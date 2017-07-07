@@ -3,10 +3,10 @@ require 'net/http'
 
 module GiphyAPI
   class Connection
-    URL = 'http://api.giphy.com'.freeze
+    SITE = URI.parse('http://api.giphy.com').freeze
 
     def initialize
-      @site = URI.parse URL
+      @http = Net::HTTP.new SITE.host, SITE.port
     end
 
     def get path, options = {}
@@ -14,17 +14,37 @@ module GiphyAPI
     end
 
     def request method, path, *arguments
-      new_http.send method, path, *arguments
+      result = http.send method, path, *arguments
+      handle_response(result)
     end
 
     private
 
-    def configuration
-      GiphyAPI.configuration
+    attr_reader :http
+
+    def handle_response response
+      case response.code.to_i
+      when 200
+        response
+      when 400
+        raise BadRequest.new(response, 'Request was formatted incorrectly or missing required parameters.')
+      when 401
+        raise UnauthorizedAccess.new(response, "Unauthorized to make this request. Missing API_KEY.")
+      when 403
+        raise ForbiddenAccess.new(response, "Unauthorized to make your request. Invalid API_KEY.")
+      when 404
+        raise NotFound.new(response, 'Gif or URL not found.')
+      when 429
+        raise TooManyRequests.new(response, 'Too many requests for your API_KEY.')
+      when 500..600
+        raise ServerError.new(response, 'Server Error')
+      else
+        raise ConnectionError.new(response)
+      end
     end
 
-    def new_http
-      Net::HTTP.new @site.host, @site.port
+    def configuration
+      GiphyAPI.configuration
     end
 
     def complete_options options
