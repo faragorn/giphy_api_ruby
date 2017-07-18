@@ -3,8 +3,9 @@ require 'json'
 require 'giphy_api/configuration'
 require 'giphy_api/exceptions'
 require 'giphy_api/connection'
-require 'giphy_api/gifs'
-
+require 'giphy_api/collection'
+require 'giphy_api/raw_data_attributes'
+require 'giphy_api/resources'
 
 module GiphyAPI
   class <<  self

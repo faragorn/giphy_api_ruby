@@ -7,9 +7,10 @@ module GiphyAPI
     end
 
     def to_s
-      message = 'Failed.'
-      message << " Response code = #{response.code}" if response.respond_to?(:code)
-      message << " Reason = #{@message}" if @message
+      msg = 'Failed.'
+      msg << " Response code = #{response.code}." if response.respond_to?(:code)
+      msg << " Reason = #{response.message}" if response.respond_to?(:message)
+      msg
     end
   end
 
