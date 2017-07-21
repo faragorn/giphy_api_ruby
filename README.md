@@ -8,7 +8,7 @@ This gem supports all endpoints that are officially documented by Giphy. Please 
 
 Add this line to your application's Gemfile:
 ```ruby
-gem 'giphy_api', github: 'faragorn/giphy_api'
+gem 'giphy_api', github: 'faragorn/giphy_api', tag: 'v1.0.0'
 ```
 
 And then execute:
