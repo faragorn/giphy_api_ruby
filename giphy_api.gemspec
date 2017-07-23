@@ -22,4 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest", "~> 5.0"
   spec.add_development_dependency "fakeweb",  "~> 1.3"
   spec.add_development_dependency "byebug", "~> 9.0"
+  spec.add_development_dependency "codecov", "~> 0.1"
 end

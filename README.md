@@ -1,6 +1,7 @@
 # Giphy API
 
 [![Build Status](https://travis-ci.org/faragorn/giphy_api.svg?branch=master)](https://travis-ci.org/faragorn/giphy_api)
+[![codecov](https://codecov.io/gh/faragorn/giphy_api/branch/master/graph/badge.svg)](https://codecov.io/gh/faragorn/giphy_api)
 
 Giphy API gem allows Ruby developers to progromatically access Giphy API V1.
 
@@ -120,8 +121,6 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 ## TO Do List
 
-* More tests for Image, User and Base classes
-* Configure Travis CI
-* Generate Code coverage reports
+* More tests for Base class
 * Add rubocop for syntax checking
 * Create a CLI
