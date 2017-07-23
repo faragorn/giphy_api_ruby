@@ -1,10 +1,20 @@
+require 'simplecov'
+SimpleCov.start do
+  add_filter "/test/"
+end
+
+if ENV['CI']
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end
+
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'giphy_api'
 require 'minitest/autorun'
 require 'byebug'
 require 'fake_web'
 
-FakeWeb.allow_net_connect = false
+FakeWeb.allow_net_connect = %r[^https?://codecov.io]
 
 module GiphyAPI
   class Spec < Minitest::Spec
