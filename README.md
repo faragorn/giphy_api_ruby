@@ -1,5 +1,7 @@
 # Giphy API
 
+[![Build Status](https://travis-ci.org/faragorn/giphy_api.svg?branch=master)](https://travis-ci.org/faragorn/giphy_api)
+
 Giphy API gem allows Ruby developers to progromatically access Giphy API V1.
 
 This gem supports all endpoints that are officially documented by Giphy. Please refer to [Giphy API Documentation](https://developers.giphy.com/docs/) for more details about endpoints and parameters.
