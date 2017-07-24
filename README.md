@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/faragorn/giphy_api.svg?branch=master)](https://travis-ci.org/faragorn/giphy_api)
 [![codecov](https://codecov.io/gh/faragorn/giphy_api/branch/master/graph/badge.svg)](https://codecov.io/gh/faragorn/giphy_api)
+[![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/codeclimate/codeclimate)
 
 Giphy API gem allows Ruby developers to progromatically access Giphy API V1.
 
