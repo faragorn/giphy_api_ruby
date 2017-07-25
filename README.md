@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/faragorn/giphy_api.svg?branch=master)](https://travis-ci.org/faragorn/giphy_api)
 [![codecov](https://codecov.io/gh/faragorn/giphy_api/branch/master/graph/badge.svg)](https://codecov.io/gh/faragorn/giphy_api)
-[![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/codeclimate/codeclimate)
+[![Code Climate](https://codeclimate.com/github/faragorn/giphy_api/badges/gpa.svg)](https://codeclimate.com/github/faragorn/giphy_api)
 
 Giphy API gem allows Ruby developers to progromatically access Giphy API V1.
 
@@ -31,6 +31,8 @@ GiphyAPI.configure do |config|
 end
 ```
 
+You are highly recommended to use a different JSON parser for perfomance reasons.
+The easiset solution is to use [MultiJSON](https://github.com/intridea/multi_json)
 Your custom JSON parser should implement `load` method.
 
 ## Usage
