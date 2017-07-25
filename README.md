@@ -31,9 +31,9 @@ GiphyAPI.configure do |config|
 end
 ```
 
-You are highly recommended to use a different JSON parser for perfomance reasons.
-The easiset solution is to use [MultiJSON](https://github.com/intridea/multi_json)
-Your custom JSON parser should implement `load` method.
+You are highly recommended to use a different JSON parser for perfomance reasons. <br />
+The easiset solution is to use [MultiJSON](https://github.com/intridea/multi_json) gem. <br />
+Your custom JSON parser must implement `load` method.
 
 ## Usage
 
