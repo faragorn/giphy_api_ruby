@@ -1,8 +1,8 @@
 # Giphy API
 
-[![Build Status](https://travis-ci.org/faragorn/giphy_api.svg?branch=master)](https://travis-ci.org/faragorn/giphy_api)
-[![codecov](https://codecov.io/gh/faragorn/giphy_api/branch/master/graph/badge.svg)](https://codecov.io/gh/faragorn/giphy_api)
-[![Code Climate](https://codeclimate.com/github/faragorn/giphy_api/badges/gpa.svg)](https://codeclimate.com/github/faragorn/giphy_api)
+[![Build Status](https://travis-ci.org/faragorn/giphy_api_ruby.svg?branch=master)](https://travis-ci.org/faragorn/giphy_api_ruby)
+[![codecov](https://codecov.io/gh/faragorn/giphy_api_ruby/branch/master/graph/badge.svg)](https://codecov.io/gh/faragorn/giphy_api_ruby)
+[![Code Climate](https://codeclimate.com/github/faragorn/giphy_api_ruby/badges/gpa.svg)](https://codeclimate.com/github/faragorn/giphy_api_ruby)
 
 Giphy API gem allows Ruby developers to progromatically access Giphy API V1.
 
@@ -12,8 +12,13 @@ This gem supports all endpoints that are officially documented by Giphy. Please 
 
 Add this line to your application's Gemfile:
 ```ruby
-gem 'giphy_api', github: 'faragorn/giphy_api', tag: 'v1.0.0'
+gem 'giphy_api_ruby'
 ```
+or to install directly from github:
+```ruby
+gem 'giphy_api_ruby', github: 'faragorn/giphy_api_ruby'
+```
+
 
 And then execute:
 
@@ -25,9 +30,9 @@ RubyGems version is coming soon!
 
 ```ruby
 GiphyAPI.configure do |config|
-  config.api_key = 'YOUR API KEY' # set to ENV['GIPHY_API_KEY'] by default
-  config.json_parser = JSONParser # set to JSON by default
-  config.api_prefix = 'v1'       # set to 'v1' by default
+  config.api_key = 'YOUR API KEY' # ENV['GIPHY_API_KEY'] by default
+  config.json_parser = MultiJson  # JSON by default
+  config.api_prefix = 'v1'        # 'v1' by default
 end
 ```
 
@@ -116,7 +121,7 @@ These attributes will be set to `nil` if nothing was returned.
 1. Commit your changes and create a pull request.
 
 **Note:** run `rake test` to run the tests. You can also run `bundle console` for an interactive prompt that will allow you to experiment. <br />
-Bug reports and pull requests are welcome on GitHub at https://github.com/faragorn/giphy_api.
+Bug reports and pull requests are welcome on GitHub at https://github.com/faragorn/giphy_api_ruby.
 
 ## License
 

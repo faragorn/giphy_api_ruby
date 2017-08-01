@@ -9,7 +9,7 @@ if ENV['CI']
 end
 
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'giphy_api'
+require 'giphy_api_ruby'
 require 'minitest/autorun'
 require 'byebug'
 require 'fake_web'

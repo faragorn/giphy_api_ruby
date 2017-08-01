@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'giphy_api/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "giphy_api"
+  spec.name          = "giphy_api_ruby"
   spec.version       = GiphyApi::VERSION
   spec.authors       = ["Farrukh Abdulkadyrov"]
   spec.email         = ["farrukhabdul@gmail.com"]
 
   spec.summary       = 'Minimalistic Ruby Wrapper for Giphy API'
-  spec.homepage      = "https://gihtub.com/faragorn/giphy_api"
+  spec.homepage      = "https://gihtub.com/faragorn/giphy_api_ruby"
   spec.license       = "MIT"
   spec.required_ruby_version = '~> 2.0'
 
