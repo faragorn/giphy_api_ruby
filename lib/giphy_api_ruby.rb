@@ -14,7 +14,7 @@ module GiphyAPI
     def configuration
       @configuration ||= Configuration.new
     end
-    def configure &block
+    def configure
       yield configuration
     end
   end
