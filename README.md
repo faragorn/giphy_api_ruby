@@ -24,8 +24,6 @@ And then execute:
 
     $ bundle install
 
-RubyGems version is coming soon!
-
 ## Configuration
 
 ```ruby
