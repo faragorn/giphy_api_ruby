@@ -4,7 +4,7 @@
 [![codecov](https://codecov.io/gh/faragorn/giphy_api_ruby/branch/master/graph/badge.svg)](https://codecov.io/gh/faragorn/giphy_api_ruby)
 [![Code Climate](https://codeclimate.com/github/faragorn/giphy_api_ruby/badges/gpa.svg)](https://codeclimate.com/github/faragorn/giphy_api_ruby)
 
-Giphy API gem allows Ruby developers to progromatically access Giphy API V1.
+Giphy API gem allows Ruby developers to programatically access Giphy API V1.
 
 This gem supports all endpoints that are officially documented by Giphy. Please refer to [Giphy API Documentation](https://developers.giphy.com/docs/) for more details about endpoints and parameters.
 
@@ -125,8 +125,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/farago
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-## TO Do List
+## TODO List
 
 * More tests for Base class
-* Add rubocop for syntax checking
 * Create a CLI
